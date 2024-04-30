@@ -1,0 +1,28 @@
+<ion-content>
+
+  <div class="formContainer">
+    <ion-card class="cardContainer">
+      <ion-card-header style="padding-top: 20px;">
+        <ion-card-title id="titleLogin">INICIA SESION</ion-card-title>
+      </ion-card-header>
+      <ion-card-content style="padding-bottom: 20px;">
+        <form (ngSubmit)="login()">
+          <ion-item class="inputItem">
+            <ion-label class="fontLabel" position="floating">Correo:</ion-label>
+            <ion-input type="text" [(ngModel)]="usuario" name="usuario" required></ion-input>
+          </ion-item>
+          <ion-item class="inputItem">
+            <ion-label class="fontLabel" position="floating">Contraseña:</ion-label>
+            <ion-input type="password" [(ngModel)]="contrasena" name="password" required></ion-input>
+          </ion-item>
+          <div class="loginRegister">
+            <ion-button type="submit">
+              Ingresar
+            </ion-button>
+          </div>
+        </form>
+      </ion-card-content>
+    </ion-card>
+  </div>
+
+</ion-content>

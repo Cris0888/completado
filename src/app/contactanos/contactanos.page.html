@@ -1,0 +1,33 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button menu="menuPrincipal" ></ion-menu-button>
+    </ion-buttons>
+    <ion-title>CONTACTANOS</ion-title>
+    <ion-icon slot="end" id="iconperfil"  name="person-circle-sharp" [routerLink]="
+    ['/editar-perfil']
+    "></ion-icon>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content id="contenedor" [fullscreen]="true">
+  <ion-title class="tit">MAS SOBRE NOSOTROS</ion-title>
+  <ion-list *ngIf="listaDeDatos.length > 0">
+    <div id="consulgym" *ngFor="let item of listaDeDatos">
+      <ion-label  class="centrado">SOMOS:</ion-label>
+      <ion-label  class="centrado">{{item.nombre_gym}}</ion-label>
+      <ion-label  class="centrado">NUESTRO TELEFONO ES:</ion-label>
+      <ion-label  class="centrado">{{item.telefono_gym}}</ion-label>
+      <ion-label  class="centrado">NUESTRO CORREO ES:</ion-label>
+      <ion-label  class="centrado">{{item.correo_gym}}</ion-label>
+      <ion-label  class="centrado">ESTAMOS HUBICADOS EN:</ion-label>
+      <ion-label  class="centrado">{{item.hubicacion_gym}}</ion-label>
+      <ion-label  class="centrado">BARRIO: :</ion-label>
+      <ion-label  class="centrado">{{item.barrio_gym}}</ion-label>
+      <ion-label  class="centrado">NUESTRA DIRECCION ES: :</ion-label>
+      <ion-label  class="centrado">{{item.direcion_gym}}</ion-label>
+      
+    </div>
+  </ion-list>
+  <ion-spinner id="spiner" *ngIf="listaDeDatos.length === 0"></ion-spinner>
+</ion-content>

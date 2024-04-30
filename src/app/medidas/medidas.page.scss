@@ -1,0 +1,203 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-size: 12px;
+}
+
+
+
+.fondo {
+    background-color: #333531;
+    padding: 20px;
+    color: var( --ion-color-primary-shade);
+}
+
+#titulo {
+    text-align: center;
+    color: white;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: aliceblue;
+}
+
+
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.padre {
+    position: relative;
+}
+.cajas{
+    background-color: #d6d6d6;
+    border-radius: 10px;
+    text-align: center;
+    position: absolute;
+    padding: 3px;
+    
+}
+
+p{
+    height: 20px;
+    text-align: center;
+    justify-content: center;
+    
+}
+.boton-container {
+    text-align: center;
+    color: #333533;
+    font-weight: bold;
+    padding: 8px;
+    border-radius: 10px;
+}
+ion-icon {
+    color: --ion-color-primary-shade;
+}
+
+div #peso-kg{
+bottom: 456px;
+left: 120px;
+
+
+}
+div #pecho{
+    bottom: 370px;
+    left: 140px;
+}
+div #cintura{
+    bottom: 320px;
+    left: 140px;
+
+}
+div #cadera{
+    bottom: 270px;
+    left: 140px;
+
+}
+div #bicep-izq{
+    
+    bottom: 350px;
+    left: 10px;
+
+}
+div #bicep-der{
+    bottom: 350px;
+    right: 10px;
+
+}
+div #antebrazo-izq{
+    
+    bottom: 300px;
+    left: -10px;
+
+}
+div #antebrazo-der{
+    bottom: 300px;
+    right: -10px;
+
+}
+div #muslo-izq{
+    
+    bottom: 210px;
+    left: 5px;
+
+}
+div #muslo-der{
+    bottom: 210px;
+    right: 5px;
+
+}
+
+div #pantorrilla-izq{
+    
+    bottom: 100px;
+    right: 1px;
+        
+}
+div #pantorrilla-der{
+    bottom: 100px;
+    left: 1px;
+
+}
+
+@media screen and (min-width:700px ) { 
+    #boton {
+    background-color: #9E8C1A;
+    width: 120px;
+    height: 40px;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+}
+.boton-container {
+    text-align: center;
+}
+        div img {
+        margin-left: 22%;
+        }
+        div #pecho{
+        bottom: 440px;
+        left: 345px;
+        }
+        div #peso-kg{
+        bottom: 600px;
+        left: 320px;
+        
+        }
+        div #cintura{
+        bottom: 385px;
+        left: 345px;
+        
+        }
+        div #cadera{
+        bottom: 340px;
+        left: 345px;
+        
+        }
+        div #bicep-izq{
+        bottom: 420px;
+        left: 170px;
+        
+        }
+        div #bicep-der{
+        bottom: 420px;
+        right: 170px;
+        
+        }
+        div #antebrazo-izq{
+        bottom: 360px;
+        left: 150px;
+        
+        }
+        div #antebrazo-der{
+        bottom: 360px;
+        right: 170px;
+        
+        }
+        div #muslo-izq{
+        bottom: 240px;
+        left: 170px;
+        
+        }
+        div #muslo-der{
+        bottom: 240px;
+        right: 150px;
+        
+        }
+        
+        div #pantorrilla-izq{
+        bottom: 130px;
+        right: 150px;
+            
+        }
+        div #pantorrilla-der{
+        bottom: 130px;
+        left: 170px;
+        }
+}

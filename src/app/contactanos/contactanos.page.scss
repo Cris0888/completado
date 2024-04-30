@@ -1,0 +1,49 @@
+#contenedor{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+ion-list{
+    display: flex;
+    position: absolute;
+    margin-top: 90px;
+    right: 3%;
+    width: 100%;
+    height: 80%;
+}
+#consulgym{
+    display: flex;
+    width: 100vw;
+    height: 80%;
+    top: 4%;
+    position: absolute;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-evenly;
+    left: 5%;
+}
+.centrado {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    padding: 0;
+    margin: 0;
+    margin-top: -10px;
+}
+ion-label{
+    margin-top: 30px;
+}
+.tit{
+   position: absolute;
+    margin-top: 15%;
+    margin-left: 18%;
+    font-size: 24px;
+    color: var(--ion-color-primary-tint);
+}
+#spiner{
+    position: absolute;
+    margin-top: 50%;
+     left: 40%;
+     height: 100px;
+     width: 100px;
+}

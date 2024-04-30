@@ -1,0 +1,39 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button menu="menuPrincipal" ></ion-menu-button>
+    </ion-buttons>
+    <ion-title>RUTINAS</ion-title>
+    <ion-icon slot="end" id="iconperfil" name="person-circle-sharp" [routerLink]="
+    ['/editar-perfil']
+    "></ion-icon>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content id="contenedor">
+  <ng-container *ngFor="let item of listaDeDatos; let index = index">
+      <ion-card *ngIf="currentIndex === index">
+          
+          <ion-card-header>
+              <ion-card-title id="titulo">{{ item[0]}}</ion-card-title>
+              <ion-img [src]="item[3]" id="img"></ion-img>
+          </ion-card-header>
+          <ion-card-content>
+              <p class="opciones">Series: {{ item[2]}}</p>
+              <p class="opciones">Repeticiones: {{ item[1]}}</p>
+              <div id="boton1">
+                <ion-button (click)="anteriorTarjeta()">
+                  <ion-icon name="arrow-back-outline"></ion-icon>
+                </ion-button>
+                </div>
+                <div id="boton2"><ion-button (click)="siguienteTarjeta()">
+                  <ion-icon name="arrow-forward-outline"></ion-icon>
+                </ion-button></div>
+          
+              
+              
+          </ion-card-content>
+      </ion-card>
+  </ng-container>
+</ion-content>
+

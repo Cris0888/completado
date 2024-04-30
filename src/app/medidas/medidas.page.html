@@ -1,0 +1,39 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button menu="menuPrincipal" ></ion-menu-button>
+    </ion-buttons>
+    <ion-title>MEDIDAS</ion-title>
+    <ion-icon slot="end" id="iconperfil"  name="person-circle-sharp" [routerLink]="
+    ['/editar-perfil']
+    "></ion-icon>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  
+    <ion-content [fullscreen]="true" class="body">
+      <div class="fondo" >
+        <h2>medidas y peso corporal</h2>
+        <div class="img-container"><img src="../../assets/img/medidas1.jpg" alt=""></div>
+        <div class="padre" *ngFor="let progreso of medidas">
+          <p class="cajas" id="pecho">pecho: {{progreso[0]}}</p>
+          <p class="cajas" id="peso-kg">peso corporal: {{progreso[1]}}</p>
+          <p class="cajas" id="cintura">cintura: {{progreso[2]}}</p>
+          <p class="cajas" id="cadera">cadera: {{progreso[3]}}</p>
+          <p class="cajas" id="bicep-izq">bicep: {{progreso[4]}}<ion-icon name="arrow-forward-outline" class="fecha-iz"></ion-icon></p>
+          <p class="cajas" id="bicep-der"><ion-icon name="arrow-back-outline" class="fecha-der"></ion-icon>bicep: {{progreso[5]}}</p>
+          <p class="cajas" id="antebrazo-izq">antebrazo: {{progreso[6]}} <ion-icon name="arrow-forward-outline" class="fecha-iz"></ion-icon></p>
+          <p class="cajas" id="antebrazo-der"><ion-icon name="arrow-back-outline" class="fecha-der"></ion-icon>antebrazo: {{progreso[7]}}</p>
+          <p class="cajas" id="muslo-izq">muslo: {{progreso[8]}}<ion-icon name="arrow-forward-outline" class="fecha-iz"></ion-icon></p>
+          <p class="cajas" id="muslo-der"><ion-icon name="arrow-back-outline" class="fecha-der"></ion-icon>muslo:{{progreso[9]}}</p>
+          <p class="cajas" id="pantorrilla-izq"> <ion-icon name="arrow-back-outline" class="fecha-iz"></ion-icon> pantorrilla:{{progreso[10]}}</p>
+          <p class="cajas" id="pantorrilla-der">pantorrilla: {{progreso[11]}} <ion-icon name="arrow-forward-outline" class="fecha-der"></ion-icon> </p>
+          
+        </div>
+        <div class="boton-container">
+          <ion-button color="warning" [routerLink]="['/avances']" >AVANCES</ion-button>
+        </div>
+      </div>
+    </ion-content>
+</ion-content>

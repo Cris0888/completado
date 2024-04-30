@@ -1,0 +1,34 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button menu="menuPrincipal"></ion-menu-button>
+  </ion-buttons>
+    <ion-title>CAMBIAR CORREO</ion-title>
+    <ion-icon slot="end" id="iconperfil"  name="person-circle-sharp" [routerLink]="
+    ['/editar-perfil']
+    "></ion-icon>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" id="contenedor-padre" class="ion-padding">
+  
+    <ion-card id="cambiar">
+      {{usuario}}
+
+      <h2 class="ache1">Correo:</h2>
+
+      <ion-item id="item1">
+        <ion-input  type="email" autocomplete="email" minlength="6"  [(ngModel)]="correo"></ion-input>
+      </ion-item>
+
+      <h2 class="ache2">Confirmar Correo:</h2>
+
+      <ion-item id="item2">
+        <ion-input type="email" autocomplete="email" minlength="6" [(ngModel)]="correo2"></ion-input>
+      </ion-item>
+
+    </ion-card>
+    
+    <ion-button class="btn-actualizar" type="submit"  expand="full" (click)="verificarCorreo()" >Actualizar</ion-button> 
+    
+</ion-content>
